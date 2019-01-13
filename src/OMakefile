@@ -27,8 +27,9 @@ if $(not $(OCAMLFIND_EXISTS))
    exit 1
 
 FILES[]=
-  generate_tree
+  tree
   draw
+  main
 
 # If you are only interested in some parts of image formats,
 # for example, gif and jpeg, say camlimages.gif camlimages.jpeg
