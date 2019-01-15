@@ -1,10 +1,10 @@
-let max_angle = 30.0
+let max_angle = 35.0
 
 let thickness (level : int) = 
-	level * 2
+	(level) + (level)
 
 let branch_length (level : int) = 
-	(Random.float 50.0) +. (float level *. 15.0)
+	(Random.float 50.0) +. (float level *. 10.0)
 
 let color_change = 10
 

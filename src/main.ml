@@ -1,5 +1,6 @@
 let width = 1000
 let length = 1000
+let recursion_depth = 9
 
 let () = 
 	Random.self_init ();
@@ -7,6 +8,6 @@ let () =
 	Graphics.set_color Graphics.black;
 	Graphics.fill_rect 0 0 width length; 
 	let random_color = (Random.int 255, Random.int 255, Random.int 255) in 
-	Tree.create_tree (width/2) 0 0.0 10 random_color;
+	Tree.create_tree (width/2) 0 0.0 recursion_depth random_color;
 	let _ = read_line () in 
 	Draw.render_tree width length "output.bmp"
